@@ -1,14 +1,53 @@
 <!DOCTYPE html>
+<!-- Site is set up to render in English language
+I am going to do a Spanish version as well soon -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <!-- tag that refers to the screen width of the device rendering the website-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Using bootstrap css library from cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Temp title-->
+    <title>Jorge C | Fullstack Software Engineer</title>
 </head>
 
 <body>
-
+    <!-- Using a div with container-fluid class to wrap the contents of this site -->
+    <div class="container-fluid">
+        <!-- Using responsive navbar from bootsrap library
+        Beginnig of Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <!-- Adding a little branding logo image-->
+                <img src="./assets/img/brand.svg" width="35" height="35" alt="Jorge Calderon FullStack Software Engineer" loading="lazy">
+            </a>
+            <!-- Display the hamburguer menu icon when screen reach breakpoint of sm-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--End of menu hamburguer-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Options available on this navbar-->
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <!-- Setting this option as a current on the index.html-->
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Me</a>
+                    </li>
+                </ul>
+                <!-- End of the options available on this navbar-->
+            </div>
+        </nav>
+        <!--End of Navbar-->
+    </div>
+    <!-- End of the div container-fluid class that wraps the contents of this site -->
 </body>
 
 </html>
