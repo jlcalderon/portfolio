@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #e9e9e9;
+    /* background-color: snow; */
+    color: #808080;
+}
+
+a {
+    color: #808080;
+}
+
+a:hover {
+    color: black;
+}
+
+#main-heading {
+    background-image: url("../img/main-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 3%;
+    margin-top: 1%;
+}
+
+#title {
+    color: snow;
+    font-weight: 500;
+}
+
+.wrapper {
+    margin: 3% 5%;
+    padding: 3%;
+    /* background-color: lightslategray; */
+    background: snow;
+}
+
+#profile-pic {
+    width: 220px;
+    border-radius: 90%;
+    border: 1px solid lightgray
+}
