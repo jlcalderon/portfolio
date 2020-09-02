@@ -36,7 +36,7 @@ I am going to do a Spanish version as well soon -->
                 Beginnig of Navbar  #848484
                 style="background-color: #808080;"
             -->
-                <nav class="navbar navbar-expand-lg navbar-dark navigation" style="background-color:#808080;">
+                <nav class="navbar navbar-expand-lg navbar-dark navigation" style="background-color:#808080; position: sticky">
                     <!--<a class=" navbar-brand " href="# ">
 Adding a little branding logo image
 <img src="./assets/img/brand.svg " width="35 " height="35 " alt="Jorge Calderon FullStack Software Engineer " loading="lazy ">
@@ -51,13 +51,13 @@ Adding a little branding logo image
                         <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <!-- Setting this option as a current on the index.html-->
-                                <h4><a class="nav-link" href="#about">About me<span class="sr-only">(current)</span></a></h4>
+                                <h4><a class="nav-link innernav" href="#about">About me<span class="sr-only">(current)</span></a></h4>
                             </li>
                             <li class="nav-item">
-                                <h4><a class="nav-link" href="#portfolio">Portfolio</a></h4>
+                                <h4><a class="nav-link innernav" href="#portfolio">Portfolio</a></h4>
                             </li>
                             <li class="nav-item">
-                                <h4><a class="nav-link" href="#contacts">Contacts</a></h4>
+                                <h4><a class="nav-link innernav" href="#contacts">Contacts</a></h4>
                             </li>
                         </ul>
                         <!-- End of the options available on this navbar-->
@@ -71,11 +71,11 @@ Adding a little branding logo image
             <div class="row">
                 <div class="col-sm-12 col-md-9">
                     <h3>About Me</h3>
-                    <p style="text-align: justify; text-justify: newspaper;">
+                    <p id="past" style="text-align: justify; text-justify: newspaper;">
                         While I was in highschool I took some tech courses of coding in Visual Fox Pro and Visual Basic, helping my classmates to type, fix and run their code was fun. I remember coding little desktop apps connected with databases, that was mind blowing. This
                         makes me wonder how would it be working as a developer... and here I am.
                     </p>
-                    <p style="text-align: justify; text-justify: newspaper;">
+                    <p id="future" style="text-align: justify; text-justify: newspaper;">
                         Ready to contribute my experience and skills with your company to provide great solutions. Tech professional experienced on web app projects. Person motivated to learn new technologies. Excellent team work integration, verbal and written communication
                         skills.
                     </p>
@@ -92,10 +92,10 @@ Adding a little branding logo image
                     Let's connect:
                 </div>
                 <div class="col-sm-12 col-md-12">
-                    <a href="https://www.linkedin.com/in/jorge-calderon-143480187" target="_blank" alt="Jorge Calderon FullStack Web Developer LinkdeIn Profile"><span class="fa fa-linkedin-square" aria-hidden="true"></a><span> | </span>
-                    <a href="https://github.com/jlcalderon" target="_blank" alt="Jorge Calderon FullStack Web Developer Github Repositories"><span class="fa fa-github-square" aria-hidden="true"></a></span>
+                    <a href="https://www.linkedin.com/in/jorge-calderon-143480187" target="_blank" alt="Jorge Calderon FullStack Web Developer LinkdeIn Profile"><span class="fa fa-linkedin-square" style="font-size: 32px;" aria-hidden="true"></a><span> | </span>
+                    <a href="https://github.com/jlcalderon" target="_blank" alt="Jorge Calderon FullStack Web Developer Github Repositories"><span class="fa fa-github-square" style="font-size: 32px;" aria-hidden="true"></a></span>
                     </a><span> | </span>
-                    <a href="https://stackoverflow.com/users/13569142/jlc" target="_blank" alt="Jorge Calderon FullStack Web Developer Stack-Overflow Q/A posts"><span class="fa fa-stack-overflow"></a></span>
+                    <a href="https://stackoverflow.com/users/13569142/jlc" target="_blank" alt="Jorge Calderon FullStack Web Developer Stack-Overflow Q/A posts"><span class="fa fa-stack-overflow" style="font-size: 32px;" aria-hidden="true"></a></span>
                 </div>
             </div>
         </div>
@@ -106,37 +106,37 @@ Adding a little branding logo image
                     <h3>My Portfolio</h3>
                 </div>
             </div>
-            <div class="row" style="margin-top:3%;">
+            <div class="row" style="margin:3% 3%;">
                 <div class="col-sm-12 col-md-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img src="./assets/img/thumbnail-trails-finder.jpg" class="card-img-top" alt="Jorge Calderon Trails Finder Project">
                         <div class="card-body">
                             <h5 class="card-title">Trails Finder</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://github.com/jlcalderon/project-1" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
-                            <a href="https://jlcalderon.github.io/project-1" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed app</a>
+                            <p class="card-text">This app help users find hiking trails and get to know the current weather conditions in those trails.</p>
+                            <a href="https://github.com/jlcalderon/project-1" target="_blank" class="btn btn-dark" style="background-color: #808080;">Public Repo</a>
+                            <a href="https://jlcalderon.github.io/project-1" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed App</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img src="./assets/img/thumbnail-totto.jpg" class="card-img-top" alt="Jorge Calderon Totto merchandise request for re-sellers Project">
                         <div class="card-body">
                             <h5 class="card-title">Totto Merchandise Request</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://github.com/jlcalderon/totto" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
-                            <a href="http://www.totto.com.hn" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed app</a>
+                            <p class="card-text">This app allow clients to request products to purchase from their end to the main warehouse.</p>
+                            <a href="https://github.com/jlcalderon/totto" target="_blank" class="btn btn-dark" style="background-color: #808080;">Private Repo</a>
+                            <a href="http://www.totto.com.hn" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed App</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img src="./assets/img/thumbnail-happy-fish.jpg" class="card-img-top" alt="Jorge Calderon Happy Fish Restaurant Web Site and Reservations Project">
                         <div class="card-body">
                             <h5 class="card-title">Happy Fish Reservations</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="https://github.com/jlcalderon/happyfish" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
-                            <a href="https://www.happyfishrestaurant.com" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed app</a>
+                            <p class="card-text">Website increased the reservations by 30% also allows admins send predefined ads emails to customers.</p>
+                            <a href="https://github.com/jlcalderon/happyfish" target="_blank" class="btn btn-dark" style="background-color: #808080;">Private Repo</a>
+                            <a href="https://www.happyfishrestaurant.com" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed Site</a>
                         </div>
                     </div>
                 </div>
