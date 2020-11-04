@@ -71,11 +71,11 @@ Adding a little branding logo image
             <div class="row">
                 <div class="col-sm-12 col-md-9">
                     <h3>About Me</h3>
-                    <p id="past" style="text-align: justify; text-justify: newspaper;">
+                    <p id="past" style="text-align: justify; text-justify: auto;">
                         While I was in highschool I took some tech courses of coding in Visual Fox Pro and Visual Basic, helping my classmates to type, fix and run their code was fun. I remember coding little desktop apps connected with local databases, back then that was mind
                         blowing for me. That got me wondering.. How would it be working as a developer? And here I am.
                     </p>
-                    <p id="future" style="text-align: justify; text-justify: newspaper;">
+                    <p id="future" style="text-align: justify; text-justify: auto;">
                         Ready to contribute my experience and skills with your company to provide great solutions. Tech professional with a bachelor degree in computer science, experienced on web app projects. Person motivated to learn new technologies. Good team work integration
                         and problem solving skills, excellent verbal and written communication, with customer support experience.
                     </p>
@@ -107,36 +107,143 @@ Adding a little branding logo image
                 </div>
             </div>
             <div class="row" style="margin:3% 3%;">
-                <div class="col-sm-12 col-md-4">
-                    <div class="card">
+                <div class="card-deck">
+                    <!-- <div class="col-sm-12 col-md-4"> -->
+                    <div class="card border-secondary">
                         <img src="./assets/img/thumbnail-trails-finder.jpg" class="card-img-top" alt="Jorge Calderon Trails Finder Project">
                         <div class="card-body">
-                            <h5 class="card-title">Trails Finder</h5>
-                            <p class="card-text">This app help users find hiking trails and get to know the current weather conditions in those trails.</p>
-                            <a href="https://github.com/jlcalderon/project-1" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
-                            <a href="https://jlcalderon.github.io/project-1" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed App</a>
+                            <h5 class="card-title">Trails Finder -> <a style="font-size: smaller; font-style: oblique;" data-toggle="collapse" href="#tecsForTrails" role="button">Techs used</a></h5>
+                            <div class="collapse" id="tecsForTrails">
+                                <ul class="list-group">
+                                    <li class="list-group-item"> Google Geolocation API </li>
+                                    <li class="list-group-item"> Google Maps API </li>
+                                    <li class="list-group-item"> Adventure Projects Inc API </li>
+                                    <li class="list-group-item"> Open Weather API </li>
+                                    <li class="list-group-item"> Foundation CSS Library </li>
+                                    <li class="list-group-item"> Jquery </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">This app help users find hiking trails and get to know the current weather conditions in those trails.</p>
+                                <!-- add the technologies used  -->
+                                <a href="https://github.com/jlcalderon/project-1" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
+                                <a href="https://jlcalderon.github.io/project-1" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed App</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="card">
-                        <img src="./assets/img/thumbnail-dev-team-cli.jpg" class="card-img-top" alt="Jorge Calderon Totto merchandise request for re-sellers Project">
+                    <div class="card border-secondary">
+                        <img src="./assets/img/thumbnail-household-optimizer.jpg" class="card-img-top" alt="Jorge Calderon Happy Fish Restaurant Web Site and Reservations Project">
                         <div class="card-body">
-                            <h5 class="card-title">Dev Team Generator</h5>
-                            <p class="card-text">This CLI app allows managers/leads to easy create a html page with thier team basic info.</p>
-                            <a href="https://github.com/jlcalderon/dev-team" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
-                            <a href="https://github.com/jlcalderon/dev-team" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed App</a>
+                            <h5 class="card-title">Household App -> <a style="font-size: smaller; font-style: oblique;" data-toggle="collapse" href="#tecsForHouse" role="button">Techs used</a></h5>
+                            <div class="collapse" id="tecsForHouse">
+                                <ul class="list-group">
+                                    <li class="list-group-item"> Handlebars </li>
+                                    <li class="list-group-item"> MVC Pattern </li>
+                                    <li class="list-group-item"> Node JS </li>
+                                    <li class="list-group-item"> Javascript </li>
+                                    <li class="list-group-item"> Ajax </li>
+                                    <li class="list-group-item"> Passport JS </li>
+                                    <li class="list-group-item"> Express </li>
+                                    <li class="list-group-item"> Sequelize ORM </li>
+                                    <li class="list-group-item"> Database Relationships </li>
+                                    <li class="list-group-item"> Heroku </li>
+                                    <li class="list-group-item"> Bootstrap CSS Library </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Application that allows users keep track of essentials in their household by updating inventory.</p>
+                                <a href="https://github.com/jlcalderon/project-2" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
+                                <a href="https://vast-mesa-04959.herokuapp.com/" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed Site</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="card">
+                    <div class="card border-secondary">
                         <img src="./assets/img/thumbnail-burger.jpg" class="card-img-top" alt="Jorge Calderon Happy Fish Restaurant Web Site and Reservations Project">
                         <div class="card-body">
-                            <h5 class="card-title">Burger with Express, MySQL and ORM</h5>
-                            <p class="card-text">Single web app that lets users input the names of burgers they'd like to eat.</p>
-                            <a href="https://github.com/jlcalderon/burger" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
-                            <a href="https://burger-obscure.herokuapp.com/" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed Site</a>
+                            <h5 class="card-title">Burger App -> <a style="font-size: smaller; font-style: oblique;" data-toggle="collapse" href="#tecsForBurger" role="button">Techs used</a></h5>
+                            <div class="collapse" id="tecsForBurger">
+                                <ul class="list-group">
+                                    <li class="list-group-item"> Node JS </li>
+                                    <li class="list-group-item"> MVC Pattern </li>
+                                    <li class="list-group-item"> Express </li>
+                                    <li class="list-group-item"> MySQL </li>
+                                    <li class="list-group-item"> Handlebars </li>
+                                    <li class="list-group-item"> Craft ORM </li>
+                                    <li class="list-group-item"> Javascript </li>
+                                    <li class="list-group-item"> Heroku </li>
+                                    <li class="list-group-item"> Bootstrap CSS Library </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Single web app that lets users input the names of burgers they'd like to eat.</p>
+                                <a href="https://github.com/jlcalderon/burger" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
+                                <a href="https://burger-obscure.herokuapp.com/" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin:3% 3%;">
+                <div class="card-deck">
+                    <div class="card border-secondary">
+                        <img src="./assets/img/thumbnail-dev-team-cli.jpg" class="card-img-top" alt="Jorge Calderon Totto merchandise request for re-sellers Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Team Generator -> <a style="font-size: smaller; font-style: oblique;" data-toggle="collapse" href="#tecsForDevTeam" role="button">Techs used</a></h5>
+                            <div class="collapse" id="tecsForDevTeam">
+                                <ul class="list-group">
+                                    <li class="list-group-item"> ES6 Objects Approach </li>
+                                    <li class="list-group-item"> Unit Testing with Jest </li>
+                                    <li class="list-group-item"> Npm Inquirer Package </li>
+                                    <li class="list-group-item"> Node JS </li>
+                                    <li class="list-group-item"> Javascript </li>
+                                    <li class="list-group-item"> Bootstrap CSS Library </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">This CLI app allows managers/leads to easy create a html page with thier team basic info.</p>
+                                <a href="https://github.com/jlcalderon/dev-team" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
+                                <a href="https://github.com/jlcalderon/dev-team" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed App</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-secondary">
+                        <img src="./assets/img/thumbnail-notes-taker.jpg" class="card-img-top" alt="Jorge Calderon Happy Fish Restaurant Web Site and Reservations Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Notes Taker -> <a style="font-size: smaller; font-style: oblique;" data-toggle="collapse" href="#tecsForNotes" role="button">Techs used</a></h5>
+                            <div class="collapse" id="tecsForNotes">
+                                <ul class="list-group">
+                                    <li class="list-group-item"> Express </li>
+                                    <li class="list-group-item"> Node JS </li>
+                                    <li class="list-group-item"> UUID npm package </li>
+                                    <li class="list-group-item"> JSON's Arrays </li>
+                                    <li class="list-group-item"> Heroku </li>
+                                    <li class="list-group-item"> Bootstrap CSS Library </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Single app developed with nodejs and express, this one displays, saves and deletes notes from a JSON file.</p>
+                                <a href="https://github.com/jlcalderon/notes-taker" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
+                                <a href="https://agile-woodland-28931.herokuapp.com/" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-secondary">
+                        <img src="./assets/img/thumbnail-daily-planner.jpg" class="card-img-top" alt="Jorge Calderon Happy Fish Restaurant Web Site and Reservations Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Daily Planner -> <a style="font-size: smaller; font-style: oblique;" data-toggle="collapse" href="#tecsForDPlanner" role="button">Techs used</a></h5>
+                            <div class="collapse" id="tecsForDPlanner">
+                                <ul class="list-group">
+                                    <li class="list-group-item"> Plain JS </li>
+                                    <li class="list-group-item"> Momment.js API </li>
+                                    <li class="list-group-item"> JS LocalStorage </li>
+                                    <li class="list-group-item"> CSS </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text">Agenda app that allows user to organize thier daily activities by editing activities or events on time blocks.</p>
+                                <a href="https://github.com/jlcalderon/dailyplanner" target="_blank" class="btn btn-dark" style="background-color: #808080;">Repository</a>
+                                <a href="https://jlcalderon.github.io/dailyplanner/" target="_blank" class="btn btn-dark" style="background-color: #808080;">Deployed Site</a>
+                            </div>
                         </div>
                     </div>
                 </div>

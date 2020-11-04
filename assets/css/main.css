@@ -25,17 +25,17 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    background: #e9e9e9;
+    background: #e3e3e3;
     /* background-color: snow; */
     color: #808080;
 }
 
 a {
-    color: #808080;
+    color: black;
 }
 
 a:hover {
-    color: black;
+    color: #808080;
 }
 
 #main-heading {
@@ -56,6 +56,17 @@ a:hover {
     margin: 3% 5%;
     padding: 3%;
     background-color: snow;
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=45, Color=#C4C4C4)"; */
+    /*IE 8*/
+    /* -moz-box-shadow: -1px 1px 3px 2px rgba(196, 196, 196, 0.9); */
+    /*FF 3.5+*/
+    /* -webkit-box-shadow: -1px 1px 3px 2px rgba(196, 196, 196, 0.9); */
+    /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    /* box-shadow: -1px 1px 3px 2px rgba(196, 196, 196, 0.9); */
+    /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    /* filter: progid: DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#C4C4C4); */
+    /*IE 5.5-7*/
+    border-radius: 20px;
 }
 
 #profile-pic {
@@ -64,9 +75,10 @@ a:hover {
     border: 1px solid #808080;
 }
 
-.card {
+
+/* .card {
     width: 20rem;
-}
+} */
 
 #goTop {
     text-align: center;
@@ -83,9 +95,9 @@ a:hover {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: #808080;
+    background-color: black;
     /* Set a background color */
-    color: black;
+    color: #808080;
     /* Text color */
     cursor: pointer;
     /* Add a mouse pointer on hover */
@@ -98,9 +110,9 @@ a:hover {
 }
 
 #goTop:hover {
-    background-color: black;
+    background-color: #808080;
     /* Add a wine background on hover */
-    color: #808080;
+    color: black;
     /* Text color */
 }
 
@@ -138,7 +150,6 @@ a:hover {
         margin: 6% 5%;
     }
     .card {
-        width: 16rem;
         margin-bottom: 10%;
     }
     .card-title {
